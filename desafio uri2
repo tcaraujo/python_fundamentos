@@ -1,0 +1,6 @@
+n = 3.14159
+raio = float(input())
+
+area = round((float(raio) ** float(raio)) * float(n), 4)
+
+print("A=",area)
