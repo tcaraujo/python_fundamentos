@@ -1,4 +1,10 @@
+# salario_real.py
 salario = int(input('Digite seu salário: '))
-imposto = float(input('Digite seu imposto em % (ex: 27.5): '))
+imposto = input('Digite seu imposto em % (ex: 27.5): ')
+
+if  imposto == '':
+    imposto = 27.5
+else:
+    imposto = float(imposto)
 
 print(f'Valor real: {salario - (salario * (imposto / 100))}')
