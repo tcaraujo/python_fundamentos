@@ -1,4 +1,15 @@
 
+#def tirar_vogais(frase):
+#    vogais = 'aeiouAEIOU'
+#    lista = []
+#    for letra in frase:
+#        if letra not in vogais:
+#            lista.append(letra)
+#    return ''.join(lista)
+
+
+
+
 def tirar_vogais(frase):
     vogais = 'aeiouAEIOU'
     frase_nova = ''
