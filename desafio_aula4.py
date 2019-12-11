@@ -8,13 +8,11 @@
 #    return ''.join(lista)
 
 
-
-
 def tirar_vogais(frase):
-    vogais = 'aeiouAEIOU'
+    vogais = 'aeiou'
     frase_nova = ''
     for letra in frase:
-        if letra not in vogais:
+        if letra.lower() not in vogais:
             frase_nova = frase_nova + letra
     return frase_nova
 
