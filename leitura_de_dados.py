@@ -63,8 +63,11 @@ def main():
                     print(col)
         elif opcao == 'r':
             entity_name = input('Nome da entidade: ')
-            other_entity = relationships[entity_name]
-            print(other_entity)
+            if not relationships.get(entity_name, None):
+                print('Entidade inexistente')
+            else:  
+                other_entity = relationships[entity_name]
+                print(other_entity)
         else:
             print('Inexistente\n')
         opcao = prompt()
